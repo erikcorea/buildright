@@ -2,7 +2,23 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #14202e;
+
+  /* Brand palette — navy + construction orange */
+  --color-brand-950: #0b1826;
+  --color-brand-900: #10263f;
+  --color-brand-800: #17395e;
+  --color-brand-700: #1f4a79;
+  --color-brand-600: #2b5f97;
+  --color-brand-100: #e7edf3;
+  --color-brand-50: #f4f7fa;
+
+  --color-accent-700: #a8420f;
+  --color-accent-600: #c9500f;
+  --color-accent-500: #e2622a;
+  --color-accent-400: #ee8354;
+  --color-accent-100: #fce9dd;
+  --color-accent-50: #fdf3ec;
 }
 
 @theme inline {
@@ -10,17 +26,30 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-brand-950: var(--color-brand-950);
+  --color-brand-900: var(--color-brand-900);
+  --color-brand-800: var(--color-brand-800);
+  --color-brand-700: var(--color-brand-700);
+  --color-brand-600: var(--color-brand-600);
+  --color-brand-100: var(--color-brand-100);
+  --color-brand-50: var(--color-brand-50);
+
+  --color-accent-700: var(--color-accent-700);
+  --color-accent-600: var(--color-accent-600);
+  --color-accent-500: var(--color-accent-500);
+  --color-accent-400: var(--color-accent-400);
+  --color-accent-100: var(--color-accent-100);
+  --color-accent-50: var(--color-accent-50);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  .input {
+    @apply w-full rounded-md border border-brand-100 bg-white px-3.5 py-2.5 text-sm text-brand-950 placeholder:text-brand-900/40 focus:border-accent-500 focus:outline-none focus:ring-2 focus:ring-accent-500/20;
+  }
 }
