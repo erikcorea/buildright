@@ -115,7 +115,7 @@ export default function Home() {
       </section>
 
       {/* Stats bar */}
-      <section className="bg-accent-500 py-12">
+      <section className="bg-linear-to-r from-accent-500 to-accent-400 py-12">
         <Container className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <Stat
             tone="gold"
