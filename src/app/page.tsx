@@ -60,10 +60,10 @@ export default function Home() {
         <HeroCarousel images={heroCarouselImages} />
         <div
           aria-hidden
-          className="absolute inset-0 bg-linear-to-l from-brand-950 via-brand-950/95 to-brand-950/55"
+          className="absolute inset-0 bg-linear-to-r from-brand-950 via-brand-950/85 to-brand-950/30"
         />
         <Container className="relative flex min-h-[560px] items-center py-28 sm:min-h-[640px] sm:py-32 lg:min-h-[700px] lg:py-40">
-          <div className="max-w-2xl ml-auto">
+          <div className="max-w-2xl">
             <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3.5 py-1.5 text-sm font-semibold uppercase tracking-wide text-accent-400">
               Chicago &amp; the surrounding suburbs
             </p>
@@ -108,12 +108,20 @@ export default function Home() {
       </section>
 
       {/* Stats bar */}
-      <section className="bg-brand-900">
-        <Container className="grid grid-cols-2 gap-6 py-10 sm:grid-cols-4">
-          <Stat value={`${business.yearsInBusiness}+`} label="Years of experience" />
-          <Stat value="Free" label="Estimates on most projects" />
-          <Stat value={`${business.travelRadiusMiles}mi`} label="Typical service radius" />
-          <Stat value="1:1" label="Owner involved start to finish" />
+      <section className="border-y border-brand-100 bg-brand-50 py-12">
+        <Container className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <Stat
+            icon={ClockIcon}
+            value={`${business.yearsInBusiness}+`}
+            label="Years of experience"
+          />
+          <Stat icon={CheckCircleIcon} value="Free" label="Estimates on most projects" />
+          <Stat
+            icon={MapPinIcon}
+            value={`${business.travelRadiusMiles}mi`}
+            label="Typical service radius"
+          />
+          <Stat icon={ShieldCheckIcon} value="1:1" label="Owner involved start to finish" />
         </Container>
       </section>
 
