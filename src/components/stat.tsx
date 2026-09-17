@@ -16,9 +16,7 @@ export function Stat({
   if (tone === "gold") {
     return (
       <div className="flex items-center gap-4">
-        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-accent-500 text-brand-950">
-          <Icon className="h-6 w-6" />
-        </span>
+        <Icon className="h-8 w-8 shrink-0 text-brand-950" />
         <div>
           <p className="text-2xl font-bold text-brand-950">{value}</p>
           <p className="text-sm font-medium text-brand-900/85">{label}</p>

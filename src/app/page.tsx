@@ -118,7 +118,7 @@ export default function Home() {
       <section className="relative overflow-hidden bg-white py-12">
         <div
           aria-hidden
-          className="absolute inset-0 bg-linear-to-r from-accent-500/25 to-accent-400/25"
+          className="absolute inset-0 bg-linear-to-r from-accent-500/60 to-accent-400/60"
         />
         <Container className="relative grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <Stat
