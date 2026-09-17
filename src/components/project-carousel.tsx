@@ -19,13 +19,19 @@ export function ProjectCarousel({ projects }: { projects: SampleProject[] }) {
     const el = scrollerRef.current;
     if (!el) return;
 
-    const recenter = () => {
+    const measure = () => {
       trackWidthRef.current = el.scrollWidth / COPIES;
-      el.scrollLeft = trackWidthRef.current;
     };
-    recenter();
+    measure();
+    // Jump to the middle copy. The container has no CSS scroll-behavior
+    // set (default "auto"), so this is an instant, invisible repositioning
+    // — not an animated one.
+    el.scrollLeft = trackWidthRef.current;
 
-    const handleResize = () => recenter();
+    // Only re-measure on resize — don't reposition. Repositioning here
+    // (e.g. on a mobile browser's address-bar-driven resize while the
+    // user is mid-scroll) is what caused the carousel to visibly jump.
+    const handleResize = () => measure();
     window.addEventListener("resize", handleResize);
 
     const handleScroll = () => {
@@ -70,7 +76,7 @@ export function ProjectCarousel({ projects }: { projects: SampleProject[] }) {
     <div className="relative">
       <div
         ref={scrollerRef}
-        className="flex snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        className="flex snap-x snap-mandatory gap-6 overflow-x-auto pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
       >
         {track}
       </div>

@@ -14,8 +14,8 @@ export function ServiceCard({ service }: { service: ServiceCategory }) {
         <Icon className="h-7 w-7" />
       </span>
       <h3 className="mt-5 text-xl font-semibold text-brand-950">{service.title}</h3>
-      <p className="mt-2.5 text-base leading-relaxed text-brand-900/70">{service.summary}</p>
-      <ul className="mt-4 space-y-2 text-base text-brand-900/70">
+      <p className="mt-2.5 text-base leading-relaxed text-brand-900/85">{service.summary}</p>
+      <ul className="mt-4 space-y-2 text-base text-brand-900/85">
         {service.items.map((item) => (
           <li key={item} className="flex gap-2">
             <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-500" />

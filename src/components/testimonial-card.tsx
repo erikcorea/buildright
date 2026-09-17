@@ -17,7 +17,7 @@ export function TestimonialCard({ testimonial }: { testimonial: SampleTestimonia
       </p>
       <div className="mt-5 flex items-center justify-between border-t border-brand-100 pt-4">
         <span className="text-sm font-semibold text-brand-950">{testimonial.project}</span>
-        <span className="rounded-full bg-brand-50 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-brand-900/60">
+        <span className="rounded-full bg-brand-50 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-brand-900/78">
           Sample
         </span>
       </div>

@@ -60,10 +60,10 @@ export default function Home() {
         <HeroCarousel images={heroCarouselImages} />
         <div
           aria-hidden
-          className="absolute inset-0 bg-linear-to-l from-brand-950 via-brand-950/90 to-brand-950/35 sm:to-brand-950/25"
+          className="absolute inset-0 bg-linear-to-l from-brand-950 via-brand-950/95 to-brand-950/55"
         />
         <Container className="relative flex min-h-[560px] items-center py-28 sm:min-h-[640px] sm:py-32 lg:min-h-[700px] lg:py-40">
-          <div className="max-w-2xl lg:ml-auto">
+          <div className="max-w-2xl ml-auto">
             <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3.5 py-1.5 text-sm font-semibold uppercase tracking-wide text-accent-400">
               Chicago &amp; the surrounding suburbs
             </p>
@@ -147,7 +147,7 @@ export default function Home() {
         <Container className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <div>
             <SectionHeading eyebrow="Why BuildRight" title="Built right. Every time." />
-            <p className="mt-5 text-base leading-relaxed text-brand-900/70">
+            <p className="mt-5 text-base leading-relaxed text-brand-900/85">
               {business.differentiator}
             </p>
             <ul className="mt-6 space-y-4">
@@ -182,7 +182,7 @@ export default function Home() {
                   </span>
                   <div>
                     <p className="font-semibold text-brand-950">{step.title}</p>
-                    <p className="mt-1 text-sm text-brand-900/70">{step.description}</p>
+                    <p className="mt-1 text-sm text-brand-900/85">{step.description}</p>
                   </div>
                 </li>
               ))}
@@ -235,7 +235,7 @@ export default function Home() {
         <Container className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
           <div>
             <SectionHeading eyebrow="Where we work" title="Proudly serving Chicagoland" />
-            <p className="mt-5 text-base leading-relaxed text-brand-900/70">
+            <p className="mt-5 text-base leading-relaxed text-brand-900/85">
               {business.serviceAreaNote}
             </p>
             <Link
@@ -256,7 +256,7 @@ export default function Home() {
                 {city}
               </span>
             ))}
-            <span className="flex items-center gap-2 rounded-full border border-dashed border-brand-100 px-4 py-2 text-sm font-medium text-brand-900/60">
+            <span className="flex items-center gap-2 rounded-full border border-dashed border-brand-100 px-4 py-2 text-sm font-medium text-brand-900/78">
               + surrounding suburbs
             </span>
           </div>

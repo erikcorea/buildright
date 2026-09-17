@@ -20,7 +20,7 @@ export default function ContactPage() {
           <h1 className="mt-2 text-4xl font-bold tracking-tight text-brand-950">
             Let&apos;s talk about your project
           </h1>
-          <p className="mt-4 text-base leading-relaxed text-brand-900/70">
+          <p className="mt-4 text-base leading-relaxed text-brand-900/85">
             {business.estimateNote}
           </p>
 
@@ -33,7 +33,7 @@ export default function ContactPage() {
                 <PhoneIcon className="h-5 w-5" />
               </span>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wide text-brand-900/50">
+                <p className="text-xs font-semibold uppercase tracking-wide text-brand-900/75">
                   Call or text
                 </p>
                 <p className="text-sm font-semibold text-brand-950">{business.phone}</p>
@@ -48,7 +48,7 @@ export default function ContactPage() {
                 <MailIcon className="h-5 w-5" />
               </span>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wide text-brand-900/50">
+                <p className="text-xs font-semibold uppercase tracking-wide text-brand-900/75">
                   Email
                 </p>
                 <p className="text-sm font-semibold text-brand-950">{business.email}</p>
@@ -60,7 +60,7 @@ export default function ContactPage() {
                 <MapPinIcon className="h-5 w-5" />
               </span>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wide text-brand-900/50">
+                <p className="text-xs font-semibold uppercase tracking-wide text-brand-900/75">
                   Service area
                 </p>
                 <p className="text-sm font-semibold text-brand-950">
@@ -74,7 +74,7 @@ export default function ContactPage() {
                 <ClockIcon className="h-5 w-5" />
               </span>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wide text-brand-900/50">
+                <p className="text-xs font-semibold uppercase tracking-wide text-brand-900/75">
                   Hours
                 </p>
                 {business.hours.map((h) => (
@@ -90,7 +90,7 @@ export default function ContactPage() {
         <div className="lg:col-span-3">
           <div className="rounded-2xl border border-brand-100 bg-white p-6 shadow-sm sm:p-8">
             <h2 className="text-lg font-semibold text-brand-950">Request a free estimate</h2>
-            <p className="mt-1 text-sm text-brand-900/70">
+            <p className="mt-1 text-sm text-brand-900/85">
               Tell us about the project and we&apos;ll get back to you to schedule a visit.
             </p>
             <div className="mt-6">

@@ -48,19 +48,19 @@ export default function AboutPage() {
         <Container className="grid grid-cols-1 gap-12 lg:grid-cols-3">
           <div className="lg:col-span-2">
             <SectionHeading eyebrow="Our story" title="Nine years of hands-on experience" />
-            <p className="mt-5 text-base leading-relaxed text-brand-900/70">
+            <p className="mt-5 text-base leading-relaxed text-brand-900/85">
               {business.experienceStory}
             </p>
-            <p className="mt-5 text-base leading-relaxed text-brand-900/70">{business.partnerStory}</p>
-            <p className="mt-5 text-base leading-relaxed text-brand-900/70">{business.customers}</p>
+            <p className="mt-5 text-base leading-relaxed text-brand-900/85">{business.partnerStory}</p>
+            <p className="mt-5 text-base leading-relaxed text-brand-900/85">{business.customers}</p>
           </div>
 
           <aside className="rounded-2xl border border-brand-100 bg-brand-50 p-7">
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-brand-900/60">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-brand-900/78">
               {business.ownerTitle}
             </h3>
             <p className="mt-2 text-2xl font-bold text-brand-950">{business.ownerName}</p>
-            <p className="mt-4 text-sm leading-relaxed text-brand-900/70">
+            <p className="mt-4 text-sm leading-relaxed text-brand-900/85">
               Founder of {business.name}, with {business.yearsInBusiness}+ years of hands-on
               remodeling and construction experience — and a 10-year career as an emergency room
               nurse before that.
@@ -86,7 +86,7 @@ export default function AboutPage() {
                 <CheckCircleIcon className="h-6 w-6 shrink-0 text-accent-600" />
                 <div>
                   <p className="font-semibold text-brand-950">{value.title}</p>
-                  <p className="mt-1 text-sm text-brand-900/70">{value.description}</p>
+                  <p className="mt-1 text-sm text-brand-900/85">{value.description}</p>
                 </div>
               </div>
             ))}

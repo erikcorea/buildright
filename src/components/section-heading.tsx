@@ -20,7 +20,7 @@ export function SectionHeading({
         {title}
       </h2>
       {description && (
-        <p className="mt-4 text-base leading-relaxed text-brand-900/70">
+        <p className="mt-4 text-base leading-relaxed text-brand-900/85">
           {description}
         </p>
       )}

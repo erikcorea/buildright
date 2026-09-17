@@ -33,10 +33,10 @@ export function ProjectCard({
       </div>
       <div className="flex flex-1 flex-col p-5">
         <h3 className="text-base font-semibold text-brand-950">{project.title}</h3>
-        <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-brand-900/70">
+        <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-brand-900/85">
           {project.scope}
         </p>
-        <p className="mt-3 flex items-center gap-1.5 text-xs font-medium text-brand-900/60">
+        <p className="mt-3 flex items-center gap-1.5 text-xs font-medium text-brand-900/78">
           <ClockIcon className="h-3.5 w-3.5" />
           {project.duration}
         </p>

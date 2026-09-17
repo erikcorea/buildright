@@ -9,7 +9,7 @@ export default function NotFound() {
         <h1 className="mt-2 text-4xl font-bold tracking-tight text-brand-950">
           Page not found
         </h1>
-        <p className="mx-auto mt-4 max-w-md text-brand-900/70">
+        <p className="mx-auto mt-4 max-w-md text-brand-900/85">
           The page you&apos;re looking for doesn&apos;t exist. Let&apos;s get you back on track.
         </p>
         <Link

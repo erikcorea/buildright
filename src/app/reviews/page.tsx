@@ -44,7 +44,7 @@ export default function ReviewsPage() {
 
           <div className="mx-auto mt-12 max-w-xl rounded-2xl border border-brand-100 bg-brand-50 p-8 text-center">
             <h3 className="text-lg font-semibold text-brand-950">Leave us a review</h3>
-            <p className="mt-2 text-sm text-brand-900/70">
+            <p className="mt-2 text-sm text-brand-900/85">
               Our Google Business Profile link will go here once it&apos;s set up.
             </p>
             <a

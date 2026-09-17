@@ -47,7 +47,7 @@ export default function ServicesPage() {
         <Container className="grid grid-cols-1 gap-10 lg:grid-cols-2">
           <div className="rounded-2xl border border-brand-100 bg-white p-8">
             <h3 className="text-lg font-semibold text-brand-950">Our main specialties</h3>
-            <p className="mt-2 text-sm text-brand-900/70">
+            <p className="mt-2 text-sm text-brand-900/85">
               While we accept smaller jobs, these are the projects we handle most and know best.
             </p>
             <ul className="mt-5 space-y-3">
@@ -68,8 +68,8 @@ export default function ServicesPage() {
 
           <div className="rounded-2xl border border-brand-100 bg-white p-8">
             <h3 className="text-lg font-semibold text-brand-950">Estimates &amp; payment</h3>
-            <p className="mt-4 text-sm leading-relaxed text-brand-900/70">{business.estimateNote}</p>
-            <p className="mt-4 text-sm leading-relaxed text-brand-900/70">{business.financingNote}</p>
+            <p className="mt-4 text-sm leading-relaxed text-brand-900/85">{business.estimateNote}</p>
+            <p className="mt-4 text-sm leading-relaxed text-brand-900/85">{business.financingNote}</p>
           </div>
         </Container>
       </section>

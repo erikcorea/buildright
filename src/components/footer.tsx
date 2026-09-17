@@ -81,7 +81,7 @@ export function Footer() {
       </Container>
 
       <div className="border-t border-white/10">
-        <Container className="flex flex-col items-center justify-between gap-3 py-6 text-xs text-brand-100/60 sm:flex-row">
+        <Container className="flex flex-col items-center justify-between gap-3 py-6 text-xs text-brand-100/75 sm:flex-row">
           <p>
             &copy; {year} {business.name}. All rights reserved.
           </p>
