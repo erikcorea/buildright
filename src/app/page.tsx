@@ -56,14 +56,9 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative isolate overflow-hidden bg-brand-950">
-        <HeroCarousel images={heroCarouselImages} />
-        <div
-          aria-hidden
-          className="absolute inset-0 bg-linear-to-r from-brand-950 via-brand-950/85 to-brand-950/30"
-        />
-        <Container className="relative flex min-h-[560px] items-center py-28 sm:min-h-[640px] sm:py-32 lg:min-h-[700px] lg:py-40">
-          <div className="max-w-2xl">
+      <section className="relative overflow-hidden bg-brand-950">
+        <Container className="relative grid grid-cols-1 items-center gap-12 py-24 sm:py-28 lg:grid-cols-2 lg:py-32">
+          <div>
             <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3.5 py-1.5 text-sm font-semibold uppercase tracking-wide text-accent-400">
               Chicago &amp; the surrounding suburbs
             </p>
@@ -104,24 +99,35 @@ export default function Home() {
               </li>
             </ul>
           </div>
+
+          <div className="relative aspect-[5/4] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10 sm:aspect-[4/3]">
+            <HeroCarousel images={heroCarouselImages} />
+          </div>
         </Container>
       </section>
 
       {/* Stats bar */}
-      <section className="border-y border-brand-100 bg-brand-50 py-12">
+      <section className="bg-accent-500 py-12">
         <Container className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <Stat
+            tone="gold"
             icon={ClockIcon}
             value={`${business.yearsInBusiness}+`}
             label="Years of experience"
           />
-          <Stat icon={CheckCircleIcon} value="Free" label="Estimates on most projects" />
+          <Stat tone="gold" icon={CheckCircleIcon} value="Free" label="Estimates on most projects" />
           <Stat
+            tone="gold"
             icon={MapPinIcon}
             value={`${business.travelRadiusMiles}mi`}
             label="Typical service radius"
           />
-          <Stat icon={ShieldCheckIcon} value="1:1" label="Owner involved start to finish" />
+          <Stat
+            tone="gold"
+            icon={ShieldCheckIcon}
+            value="1:1"
+            label="Owner involved start to finish"
+          />
         </Container>
       </section>
 
