@@ -24,6 +24,10 @@
 .DS_Store
 *.pem
 
+# raw source photos (originals live here before being curated into
+# public/images/ — not pushed to keep the repo/PRs lean)
+/photos/
+
 # debug
 npm-debug.log*
 yarn-debug.log*

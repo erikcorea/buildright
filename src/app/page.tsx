@@ -2,7 +2,8 @@ import Link from "next/link";
 import { Container } from "@/components/container";
 import { SectionHeading } from "@/components/section-heading";
 import { ServiceCard } from "@/components/service-card";
-import { ProjectCard } from "@/components/project-card";
+import { ProjectCarousel } from "@/components/project-carousel";
+import { HeroCarousel } from "@/components/hero-carousel";
 import { TestimonialCard } from "@/components/testimonial-card";
 import { CTASection } from "@/components/cta-section";
 import { Stat } from "@/components/stat";
@@ -19,6 +20,16 @@ import { business } from "@/data/business";
 import { serviceCategories } from "@/data/services";
 import { sampleProjects } from "@/data/projects";
 import { sampleTestimonials } from "@/data/testimonials";
+
+const heroCarouselImages = [
+  "kitchen-remodel",
+  "bathroom-remodel",
+  "whole-home-renovation",
+  "basement-finish",
+  "fence-install",
+]
+  .map((slug) => sampleProjects.find((p) => p.slug === slug)?.images[0])
+  .filter((image): image is NonNullable<typeof image> => Boolean(image));
 
 const process = [
   {
@@ -45,17 +56,14 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-brand-950">
+      <section className="relative isolate overflow-hidden bg-brand-950">
+        <HeroCarousel images={heroCarouselImages} />
         <div
           aria-hidden
-          className="absolute inset-0 opacity-[0.07]"
-          style={{
-            backgroundImage:
-              "repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 1px, transparent 14px)",
-          }}
+          className="absolute inset-0 bg-gradient-to-l from-brand-950 via-brand-950/90 to-brand-950/35 sm:to-brand-950/25"
         />
-        <Container className="relative grid grid-cols-1 items-center gap-12 py-20 sm:py-28 lg:grid-cols-2">
-          <div>
+        <Container className="relative py-24 sm:py-28 lg:py-32">
+          <div className="max-w-xl lg:ml-auto">
             <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wide text-accent-400">
               Chicago &amp; the surrounding suburbs
             </p>
@@ -95,22 +103,6 @@ export default function Home() {
                 Owner-led on every job
               </li>
             </ul>
-          </div>
-
-          <div className="relative">
-            <div className="grid grid-cols-2 gap-4">
-              <div className="col-span-2 flex h-40 items-center justify-center rounded-xl bg-gradient-to-br from-accent-600 to-accent-400 text-white shadow-lg">
-                <HomeIcon className="h-16 w-16 opacity-90" />
-              </div>
-              <div className="flex h-28 flex-col justify-center rounded-xl bg-white/10 p-4 text-white">
-                <p className="text-2xl font-bold">{business.yearsInBusiness}+</p>
-                <p className="text-xs text-brand-100/70">Years of experience</p>
-              </div>
-              <div className="flex h-28 flex-col justify-center rounded-xl bg-white/10 p-4 text-white">
-                <p className="text-2xl font-bold">{business.serviceAreaPrimary.length}+</p>
-                <p className="text-xs text-brand-100/70">Suburbs served</p>
-              </div>
-            </div>
           </div>
         </Container>
       </section>
@@ -205,12 +197,10 @@ export default function Home() {
           <SectionHeading
             eyebrow="Popular projects"
             title="The kind of work we love building"
-            description="Real project photos are on the way — these cards show the scope and typical timeline for our most-requested projects."
+            description="Photos from real completed jobs, showing the scope and typical timeline for our most-requested projects."
           />
-          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {sampleProjects.slice(0, 3).map((project) => (
-              <ProjectCard key={project.slug} project={project} />
-            ))}
+          <div className="mt-10">
+            <ProjectCarousel projects={sampleProjects} />
           </div>
           <div className="mt-10 text-center">
             <Link

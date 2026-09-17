@@ -15,7 +15,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-brand-100 bg-white/95 backdrop-blur">
-      <Container className="flex h-18 items-center justify-between py-3">
+      <Container className="flex h-24 items-center justify-between py-3">
         <Logo />
 
         <nav className="hidden items-center gap-7 lg:flex">

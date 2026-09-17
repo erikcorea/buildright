@@ -111,8 +111,11 @@ schedules based on project size/progress are available instead.
 
 ## 5. Projects / Previous Work
 
-(not provided — awaiting photos and project details, including
-before-and-after photos, per-project location/type/scope/duration/notes)
+Real photos received 2026-09-17 and added to the Projects page and homepage,
+organized by project type (kitchen, bathroom, basement, deck, fence,
+whole-home renovation) — see `public/images/projects/` and
+`src/data/projects.ts`. Still awaiting: per-project details (location, exact
+dates/timeline, before-and-after pairs, client name/permission to use).
 
 ## 6. Customer Reviews
 

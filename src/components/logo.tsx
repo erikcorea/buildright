@@ -1,7 +1,23 @@
+import Image from "next/image";
 import Link from "next/link";
 import { HammerIcon } from "@/components/icons";
 
 export function Logo({ dark = false }: { dark?: boolean }) {
+  if (!dark) {
+    return (
+      <Link href="/" className="flex items-center">
+        <Image
+          src="/images/logo.png"
+          alt="BuildRight Co. — General Construction & Remodeling"
+          width={817}
+          height={508}
+          priority
+          className="h-16 w-auto sm:h-20"
+        />
+      </Link>
+    );
+  }
+
   return (
     <Link
       href="/"
@@ -10,7 +26,7 @@ export function Logo({ dark = false }: { dark?: boolean }) {
       <span className="flex h-9 w-9 items-center justify-center rounded-md bg-accent-500 text-white">
         <HammerIcon className="h-5 w-5" />
       </span>
-      <span className={`text-lg leading-tight ${dark ? "text-white" : "text-brand-950"}`}>
+      <span className="text-lg leading-tight text-white">
         BuildRight
         <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-accent-500">
           Construction LLC

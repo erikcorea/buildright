@@ -1,16 +1,25 @@
+import Image from "next/image";
 import { ClockIcon, serviceIconMap } from "@/components/icons";
 import type { SampleProject } from "@/data/projects";
 
 export function ProjectCard({ project }: { project: SampleProject }) {
   const Icon = serviceIconMap[project.icon];
+  const heroImage = project.images[0];
 
   return (
     <div className="overflow-hidden rounded-xl border border-brand-100 bg-white shadow-sm">
-      <div className="relative flex h-44 items-center justify-center bg-gradient-to-br from-brand-900 to-brand-700">
-        <Icon className="h-14 w-14 text-white/25" />
-        <span className="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-brand-900">
-          Sample
-        </span>
+      <div className="relative flex h-64 items-center justify-center bg-gradient-to-br from-brand-900 to-brand-700">
+        {heroImage ? (
+          <Image
+            src={heroImage.src}
+            alt={heroImage.alt}
+            fill
+            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+            className="object-cover"
+          />
+        ) : (
+          <Icon className="h-14 w-14 text-white/25" />
+        )}
         <span className="absolute bottom-3 right-3 rounded-full bg-accent-500 px-2.5 py-1 text-[11px] font-semibold text-white">
           {project.category}
         </span>

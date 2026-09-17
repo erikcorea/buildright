@@ -23,8 +23,9 @@ export default function ProjectsPage() {
             The kind of work we take on
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-brand-100/80">
-            A real project gallery — with photos, locations, and timelines — is on the way. Until
-            then, here&apos;s the scope and typical duration for our most common projects.
+            Real photos from completed BuildRight jobs, organized by project type. Full case
+            studies with locations and exact timelines are on the way — for now, each card shows
+            the typical scope and duration for that kind of project.
           </p>
         </Container>
       </section>
@@ -32,9 +33,9 @@ export default function ProjectsPage() {
       <section className="py-20">
         <Container>
           <SectionHeading
-            eyebrow="Sample project types"
+            eyebrow="Project types"
             title="What a project with BuildRight looks like"
-            description="Every card below is marked “Sample” — it describes a typical scope of work, not a specific past job. Ask us for references or in-progress photos any time."
+            description="Photos are from real completed jobs; the scope and timeline shown describe a typical project of that type, not a specific past job. Ask us for references any time."
           />
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {sampleProjects.map((project) => (
