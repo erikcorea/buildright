@@ -13,13 +13,13 @@
   --color-brand-100: #d6dce1;
   --color-brand-50: #f7f7f4;
 
-  --color-accent-700: #8c6521;
-  --color-accent-600: #aa7a28;
-  --color-accent-500: #c8902f;
-  --color-accent-400: #d2a454;
-  --color-accent-200: #e9d3ac;
-  --color-accent-100: #f3e7d1;
-  --color-accent-50: #faf4ea;
+  --color-accent-700: #7f5e19;
+  --color-accent-600: #a67c22;
+  --color-accent-500: #d9a83a;
+  --color-accent-400: #e0b85d;
+  --color-accent-200: #f0dcb0;
+  --color-accent-100: #f7ecd4;
+  --color-accent-50: #fbf6eb;
 }
 
 @theme inline {

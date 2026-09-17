@@ -111,7 +111,7 @@ export function ContactForm() {
 
       <button
         type="submit"
-        className="w-full rounded-md bg-accent-500 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-accent-600 sm:w-auto"
+        className="w-full rounded-md bg-accent-500 px-6 py-3 text-sm font-semibold text-brand-950 shadow-sm transition-colors hover:bg-accent-600 sm:w-auto"
       >
         Request My Free Estimate
       </button>

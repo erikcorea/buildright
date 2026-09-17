@@ -83,7 +83,7 @@ export default function Home() {
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-1 rounded-md bg-accent-500 px-7 py-4 text-base font-semibold text-white shadow-sm transition-colors hover:bg-accent-600"
+                className="inline-flex items-center justify-center gap-1 rounded-md bg-accent-500 px-7 py-4 text-base font-semibold text-brand-950 shadow-sm transition-colors hover:bg-accent-600"
               >
                 Get a Free Estimate
                 <ChevronRightIcon className="h-5 w-5" />
@@ -199,7 +199,7 @@ export default function Home() {
             <ol className="mt-6 space-y-6">
               {process.map((step, i) => (
                 <li key={step.title} className="flex gap-4">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent-500 text-sm font-bold text-white">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent-500 text-sm font-bold text-brand-950">
                     {i + 1}
                   </span>
                   <div>

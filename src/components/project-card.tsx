@@ -27,7 +27,7 @@ export function ProjectCard({
         ) : (
           <Icon className="h-14 w-14 text-white/25" />
         )}
-        <span className="absolute bottom-3 right-3 rounded-full bg-accent-500 px-2.5 py-1 text-[11px] font-semibold text-white">
+        <span className="absolute bottom-3 right-3 rounded-full bg-accent-500 px-2.5 py-1 text-[11px] font-semibold text-brand-950">
           {project.category}
         </span>
       </div>

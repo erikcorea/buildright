@@ -10,7 +10,7 @@ export function ServiceCard({ service }: { service: ServiceCategory }) {
       id={service.slug}
       className="group flex scroll-mt-24 flex-col rounded-xl border border-brand-100 bg-white p-7 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-lg"
     >
-      <span className="flex h-14 w-14 items-center justify-center rounded-lg bg-accent-500 text-white shadow-sm">
+      <span className="flex h-14 w-14 items-center justify-center rounded-lg bg-accent-500 text-brand-950 shadow-sm">
         <Icon className="h-7 w-7" />
       </span>
       <h3 className="mt-5 text-xl font-semibold text-brand-950">{service.title}</h3>
