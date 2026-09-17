@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const values = [
   {
     title: "Attention to detail",
-    description: "The habits that matter in healthcare — precision and follow-through — carry directly into how we build.",
+    description: "The habits that matter in healthcare, precision and follow-through, carry directly into how we build.",
   },
   {
     title: "Clear communication",
@@ -38,7 +38,7 @@ export default function AboutPage() {
             About us
           </p>
           <h1 className="mt-2 max-w-2xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            From the ER to the job site — built on the same values
+            From the ER to the job site: built on the same values
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-white/90">{business.foundedStory}</p>
         </Container>
@@ -62,7 +62,7 @@ export default function AboutPage() {
             <p className="mt-2 text-2xl font-bold text-brand-950">{business.ownerName}</p>
             <p className="mt-4 text-sm leading-relaxed text-brand-900/85">
               Founder of {business.name}, with {business.yearsInBusiness}+ years of hands-on
-              remodeling and construction experience — and a 10-year career as an emergency room
+              remodeling and construction experience, plus a 10-year career as an emergency room
               nurse before that.
             </p>
             <div className="mt-6 space-y-2 border-t border-brand-100 pt-5 text-sm">
@@ -104,7 +104,7 @@ export default function AboutPage() {
               corners.&rdquo;
             </p>
             <p className="mt-4 text-sm font-semibold text-white/90">
-              — {business.ownerName}, {business.ownerTitle}
+              {business.ownerName}, {business.ownerTitle}
             </p>
           </div>
         </Container>

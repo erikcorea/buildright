@@ -105,13 +105,13 @@ export function ContactForm() {
           required
           rows={5}
           className="input resize-none"
-          placeholder="Location, rough scope, timeline — whatever helps us understand the job."
+          placeholder="Location, rough scope, timeline, whatever helps us understand the job."
         />
       </Field>
 
       <button
         type="submit"
-        className="w-full rounded-md bg-accent-500 px-6 py-3 text-sm font-semibold text-brand-950 shadow-sm transition-colors hover:bg-accent-600 sm:w-auto"
+        className="w-full rounded-md bg-accent-500 px-6 py-3 text-sm font-semibold text-brand-950 shadow-sm transition-colors hover:bg-accent-hover sm:w-auto"
       >
         Request My Free Estimate
       </button>

@@ -48,7 +48,7 @@ export function Header() {
           </a>
           <Link
             href="/contact"
-            className="rounded-md bg-accent-500 px-4 py-2.5 text-sm font-semibold text-brand-950 shadow-sm transition-colors hover:bg-accent-600"
+            className="rounded-md bg-accent-500 px-4 py-2.5 text-sm font-semibold text-brand-950 shadow-sm transition-colors hover:bg-accent-hover"
           >
             Get a Free Estimate
           </Link>

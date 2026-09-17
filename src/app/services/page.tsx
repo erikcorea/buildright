@@ -10,7 +10,7 @@ import { serviceCategories } from "@/data/services";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Full-service general contracting in Chicago — kitchens, bathrooms, basements, decks, fences, flooring, and whole-home renovations.",
+    "Full-service general contracting in Chicago: kitchens, bathrooms, basements, decks, fences, flooring, and whole-home renovations.",
 };
 
 export default function ServicesPage() {

@@ -46,7 +46,7 @@ const process = [
   },
   {
     title: "Final walkthrough",
-    description: "We finish with you — not just for you — so the result is exactly right.",
+    description: "We finish with you, not just for you, so the result is exactly right.",
   },
 ];
 
@@ -83,7 +83,7 @@ export default function Home() {
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-1 rounded-md bg-accent-500 px-7 py-4 text-base font-semibold text-brand-950 shadow-sm transition-colors hover:bg-accent-600"
+                className="inline-flex items-center justify-center gap-1 rounded-md bg-accent-500 px-7 py-4 text-base font-semibold text-brand-950 shadow-sm transition-colors hover:bg-accent-hover"
               >
                 Get a Free Estimate
                 <ChevronRightIcon className="h-5 w-5" />

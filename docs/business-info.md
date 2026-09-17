@@ -1,4 +1,4 @@
-# BuildRight Construction LLC — Business Info
+# BuildRight Construction LLC: Business Info
 
 Source: intake questionnaire provided by the owner. Fields left blank in the
 original doc are marked `(not provided)`. Update this file as more info comes
@@ -33,10 +33,10 @@ functional spaces while treating every client and home with respect.
 hands-on, later expanding into professional client work.
 
 **Typical customers:** Homeowners, landlords, and real estate investors
-throughout Chicago and the surrounding suburbs — from small repairs to
+throughout Chicago and the surrounding suburbs, from small repairs to
 full-house rebuilds.
 
-**Differentiator:** "BuildRight" — doing things correctly, attention to
+**Differentiator:** "BuildRight": doing things correctly, attention to
 detail, never cutting corners. Honest recommendations, clear communication,
 dependable service, respect for the client's home. Positioned as a partner
 throughout the project (material/color/finish selection, budget-fitting
@@ -113,23 +113,23 @@ schedules based on project size/progress are available instead.
 
 Real photos received 2026-09-17 and added to the Projects page and homepage,
 organized by project type (kitchen, bathroom, basement, deck, fence,
-whole-home renovation) — see `public/images/projects/` and
+whole-home renovation). See `public/images/projects/` and
 `src/data/projects.ts`. Still awaiting: per-project details (location, exact
 dates/timeline, before-and-after pairs, client name/permission to use).
 
 ## 6. Customer Reviews
 
-(not provided — Google reviews link, other review pages, testimonials, and
+(not provided: Google reviews link, other review pages, testimonials, and
 highlighted reviews still needed)
 
 ## 7. License / Insurance / Credentials
 
-(not provided — license number, licensed/insured/bonded status,
+(not provided: license number, licensed/insured/bonded status,
 certifications, awards, professional memberships)
 
 ## 8. Team
 
-(not provided — owner name/title/bio/photo, other team members, company
+(not provided: owner name/title/bio/photo, other team members, company
 photo)
 
 ## 9. Estimates & Contact
@@ -143,7 +143,7 @@ photo)
 
 ## 10. Business Photos & Materials
 
-(not provided — logo, team/company photos, owner photo, truck/vehicle
+(not provided: logo, team/company photos, owner photo, truck/vehicle
 photos, jobsite photos, before/after photos, finished project photos,
 business cards, flyers/brochures, yard signs, uniforms, other marketing
 materials)

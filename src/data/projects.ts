@@ -1,7 +1,7 @@
 // Photos below are real completed BuildRight jobs. Scope/duration text is
-// still a typical-case description rather than a per-job case study —
-// replace with specific project write-ups (location, exact timeline, client
-// notes) once the owner sends them — see /docs/business-info.md section 5.
+// still a typical-case description rather than a per-job case study.
+// Replace with specific project write-ups (location, exact timeline, client
+// notes) once the owner sends them. See /docs/business-info.md section 5.
 
 export type ProjectImage = {
   src: string;
@@ -24,7 +24,7 @@ export const sampleProjects: SampleProject[] = [
     title: "Kitchen Remodel",
     category: "Kitchens",
     scope:
-      "Full gut kitchen remodel — new cabinets, quartz countertops, tile backsplash, and updated lighting.",
+      "Full gut kitchen remodel: new cabinets, quartz countertops, tile backsplash, and updated lighting.",
     duration: "Typical timeline: 3–5 weeks",
     icon: "wrench",
     images: [
@@ -100,7 +100,7 @@ export const sampleProjects: SampleProject[] = [
     title: "Whole-Home Renovation",
     category: "Full Renovations",
     scope:
-      "Full property rehab — demolition, framing, flooring, kitchen and bathrooms, paint, and finish work.",
+      "Full property rehab: demolition, framing, flooring, kitchen and bathrooms, paint, and finish work.",
     duration: "Typical timeline: 8–16 weeks",
     icon: "home",
     images: [

@@ -35,7 +35,7 @@ export const serviceCategories: ServiceCategory[] = [
     title: "Kitchens & Bathrooms",
     icon: "wrench",
     summary:
-      "Complete kitchen and bathroom remodels — from layout and finishes to fixtures and tile.",
+      "Complete kitchen and bathroom remodels, from layout and finishes to fixtures and tile.",
     items: [
       "Kitchen remodeling",
       "Bathroom remodeling and shower conversions",
@@ -116,7 +116,7 @@ export const serviceCategories: ServiceCategory[] = [
     title: "General Repairs & Installs",
     icon: "hammer",
     summary:
-      "Smaller jobs and installs — the everyday projects that keep a home running well.",
+      "Smaller jobs and installs: the everyday projects that keep a home running well.",
     items: [
       "Appliance, microwave, range hood, and water-filtration installs",
       "Playset and specialty-product assembly",

@@ -4,7 +4,7 @@
   --background: #f7f7f4;
   --foreground: #3e4042;
 
-  /* Brand palette — deep navy, charcoal, warm white/light gray, muted gold */
+  /* Brand palette: deep navy, charcoal, warm white/light gray, gold */
   --color-brand-950: #073552;
   --color-brand-900: #3e4042;
   --color-brand-800: #2c536c;
@@ -13,13 +13,18 @@
   --color-brand-100: #d6dce1;
   --color-brand-50: #f7f7f4;
 
-  --color-accent-700: #947010;
-  --color-accent-600: #b48814;
-  --color-accent-500: #d4a017;
-  --color-accent-400: #daae3a;
-  --color-accent-200: #ecd497;
-  --color-accent-100: #f4e7c5;
-  --color-accent-50: #fbf6e8;
+  --color-accent-700: #745c17;
+  --color-accent-600: #8b6e1c;
+  /* Button hover fill only: a modest darkening of accent-500 that still
+     keeps navy button text readable. accent-600/700 are tuned instead for
+     text-on-white use (links), so they're too dark to also serve as a
+     hover background under navy text. */
+  --color-accent-hover: #c59c27;
+  --color-accent-500: #e8b72e;
+  --color-accent-400: #ebc24d;
+  --color-accent-200: #f5dfa1;
+  --color-accent-100: #f9edcb;
+  --color-accent-50: #fdf8ea;
 }
 
 @theme inline {
@@ -38,6 +43,7 @@
 
   --color-accent-700: var(--color-accent-700);
   --color-accent-600: var(--color-accent-600);
+  --color-accent-hover: var(--color-accent-hover);
   --color-accent-500: var(--color-accent-500);
   --color-accent-400: var(--color-accent-400);
   --color-accent-200: var(--color-accent-200);

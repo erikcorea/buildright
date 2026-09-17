@@ -6,7 +6,7 @@ import { business } from "@/data/business";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: `Request a free estimate from ${business.name}. Call, text, email, or send the form — we typically respond fast.`,
+  description: `Request a free estimate from ${business.name}. Call, text, email, or send the form. We typically respond fast.`,
 };
 
 export default function ContactPage() {
@@ -64,7 +64,7 @@ export default function ContactPage() {
                   Service area
                 </p>
                 <p className="text-sm font-semibold text-brand-950">
-                  Chicago &amp; suburbs — ~{business.travelRadiusMiles} mile radius
+                  Chicago &amp; suburbs, ~{business.travelRadiusMiles} mile radius
                 </p>
               </div>
             </div>

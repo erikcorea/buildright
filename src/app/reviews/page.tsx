@@ -49,7 +49,7 @@ export default function ReviewsPage() {
             </p>
             <a
               href={business.googleReviewUrl}
-              className="mt-5 inline-flex items-center justify-center rounded-md bg-accent-500 px-5 py-2.5 text-sm font-semibold text-brand-950 hover:bg-accent-600"
+              className="mt-5 inline-flex items-center justify-center rounded-md bg-accent-500 px-5 py-2.5 text-sm font-semibold text-brand-950 hover:bg-accent-hover"
             >
               Leave a Google Review
             </a>

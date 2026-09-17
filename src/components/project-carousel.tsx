@@ -11,7 +11,7 @@ import type { SampleProject } from "@/data/projects";
 // transition finishes we jump (with the transition briefly disabled,
 // so it's invisible) back to the matching real index. Because
 // navigation is just index +/- 1 with wraparound, "next" and "prev"
-// are symmetric by construction — no native-scroll timing to get wrong.
+// are symmetric by construction, no native-scroll timing to get wrong.
 export function ProjectCarousel({ projects }: { projects: SampleProject[] }) {
   const n = projects.length;
   const slides = [projects[n - 1], ...projects, projects[0]];

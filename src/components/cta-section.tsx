@@ -17,7 +17,7 @@ export function CTASection() {
         <div className="flex flex-col items-center gap-3 sm:flex-row">
           <Link
             href="/contact"
-            className="rounded-md bg-accent-500 px-6 py-3 text-sm font-semibold text-brand-950 shadow-sm transition-colors hover:bg-accent-600"
+            className="rounded-md bg-accent-500 px-6 py-3 text-sm font-semibold text-brand-950 shadow-sm transition-colors hover:bg-accent-hover"
           >
             Request a Free Estimate
           </Link>

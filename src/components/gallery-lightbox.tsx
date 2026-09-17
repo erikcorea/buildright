@@ -113,7 +113,7 @@ export function GalleryLightbox({ photos }: { photos: GalleryPhoto[] }) {
           </button>
 
           <p className="absolute bottom-4 left-1/2 max-w-[80vw] -translate-x-1/2 text-center text-sm text-white/70">
-            {active.category} — {active.alt}
+            {active.category} · {active.alt}
           </p>
         </div>
       )}

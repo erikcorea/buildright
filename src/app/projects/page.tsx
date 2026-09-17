@@ -24,7 +24,7 @@ export default function ProjectsPage() {
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-white/90">
             Real photos from completed BuildRight jobs, organized by project type. Full case
-            studies with locations and exact timelines are on the way — for now, each card shows
+            studies with locations and exact timelines are on the way. For now, each card shows
             the typical scope and duration for that kind of project.
           </p>
         </Container>

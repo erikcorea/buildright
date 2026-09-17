@@ -7,7 +7,7 @@ import { sampleProjects } from "@/data/projects";
 export const metadata: Metadata = {
   title: "Gallery",
   description:
-    "Photos from real BuildRight Construction LLC jobs across Chicago and the surrounding suburbs — kitchens, bathrooms, basements, decks, fences, and whole-home renovations.",
+    "Photos from real BuildRight Construction LLC jobs across Chicago and the surrounding suburbs: kitchens, bathrooms, basements, decks, fences, and whole-home renovations.",
 };
 
 const galleryPhotos = sampleProjects.flatMap((project) =>
