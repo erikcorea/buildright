@@ -16,12 +16,12 @@ export function Stat({
   if (tone === "gold") {
     return (
       <div className="flex items-center gap-4 rounded-xl bg-white/15 p-5">
-        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-white text-accent-600">
+        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-brand-950 text-white">
           <Icon className="h-6 w-6" />
         </span>
         <div>
-          <p className="text-2xl font-bold text-brand-950">{value}</p>
-          <p className="text-sm font-medium text-brand-950/90">{label}</p>
+          <p className="text-2xl font-bold text-white drop-shadow-sm">{value}</p>
+          <p className="text-sm font-medium text-white/90 drop-shadow-sm">{label}</p>
         </div>
       </div>
     );
