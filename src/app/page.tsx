@@ -56,9 +56,21 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-brand-950">
-        <Container className="relative grid grid-cols-1 items-center gap-12 py-24 sm:py-28 lg:grid-cols-2 lg:py-32">
-          <div>
+      <section className="relative isolate overflow-hidden bg-brand-950">
+        {/* Photo band: only the right portion of the hero, sized close to
+            the source photos' natural aspect ratio so they don't get
+            cropped down to a thin, zoomed-in sliver. A gradient fades the
+            band's own left edge into the solid navy behind the text,
+            instead of tinting the whole hero. */}
+        <div className="absolute inset-y-0 right-0 w-full sm:w-[80%] lg:w-[62%]">
+          <HeroCarousel images={heroCarouselImages} />
+          <div
+            aria-hidden
+            className="absolute inset-0 bg-linear-to-r from-brand-950 from-0% via-brand-950/65 via-35% to-brand-950/20 to-80%"
+          />
+        </div>
+        <Container className="relative flex min-h-[560px] items-center py-28 sm:min-h-[640px] sm:py-32 lg:min-h-[700px] lg:py-40">
+          <div className="max-w-xl">
             <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3.5 py-1.5 text-sm font-semibold uppercase tracking-wide text-accent-400">
               Chicago &amp; the surrounding suburbs
             </p>
@@ -98,10 +110,6 @@ export default function Home() {
                 Owner-led on every job
               </li>
             </ul>
-          </div>
-
-          <div className="relative aspect-[5/4] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-white/10 sm:aspect-[4/3]">
-            <HeroCarousel images={heroCarouselImages} />
           </div>
         </Container>
       </section>
