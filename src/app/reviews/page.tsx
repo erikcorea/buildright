@@ -22,7 +22,7 @@ export default function ReviewsPage() {
           <h1 className="mt-2 max-w-2xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
             What clients say
           </h1>
-          <p className="mt-5 max-w-2xl text-lg text-brand-100/80">
+          <p className="mt-5 max-w-2xl text-lg text-white/90">
             We&apos;re still collecting our first published reviews. The cards below are placeholders
             that show how real testimonials will appear.
           </p>

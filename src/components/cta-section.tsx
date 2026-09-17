@@ -10,7 +10,7 @@ export function CTASection() {
         <h2 className="max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
           Ready to start your project? Let&apos;s talk about it.
         </h2>
-        <p className="max-w-xl text-brand-100/80">
+        <p className="max-w-xl text-white/90">
           Free consultations and estimates for most projects. Tell us what you&apos;re
           planning and we&apos;ll walk you through it.
         </p>

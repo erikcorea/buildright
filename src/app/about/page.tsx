@@ -40,7 +40,7 @@ export default function AboutPage() {
           <h1 className="mt-2 max-w-2xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
             From the ER to the job site — built on the same values
           </h1>
-          <p className="mt-5 max-w-2xl text-lg text-brand-100/80">{business.foundedStory}</p>
+          <p className="mt-5 max-w-2xl text-lg text-white/90">{business.foundedStory}</p>
         </Container>
       </section>
 
@@ -103,7 +103,7 @@ export default function AboutPage() {
               doing things correctly, paying attention to the details, and never cutting
               corners.&rdquo;
             </p>
-            <p className="mt-4 text-sm font-semibold text-brand-100/80">
+            <p className="mt-4 text-sm font-semibold text-white/90">
               — {business.ownerName}, {business.ownerTitle}
             </p>
           </div>

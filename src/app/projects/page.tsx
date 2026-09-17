@@ -22,7 +22,7 @@ export default function ProjectsPage() {
           <h1 className="mt-2 max-w-2xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
             The kind of work we take on
           </h1>
-          <p className="mt-5 max-w-2xl text-lg text-brand-100/80">
+          <p className="mt-5 max-w-2xl text-lg text-white/90">
             Real photos from completed BuildRight jobs, organized by project type. Full case
             studies with locations and exact timelines are on the way — for now, each card shows
             the typical scope and duration for that kind of project.

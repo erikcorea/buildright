@@ -29,7 +29,7 @@ export default function GalleryPage() {
           <h1 className="mt-2 max-w-2xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
             Real photos from real jobs
           </h1>
-          <p className="mt-5 max-w-2xl text-lg text-brand-100/80">
+          <p className="mt-5 max-w-2xl text-lg text-white/90">
             {galleryPhotos.length} photos from completed BuildRight projects. Tap any photo to see
             it full size.
           </p>

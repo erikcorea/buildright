@@ -77,7 +77,7 @@ export default function Home() {
             <h1 className="mt-5 text-5xl font-bold leading-tight tracking-tight text-white sm:text-6xl">
               {business.tagline}
             </h1>
-            <p className="mt-5 max-w-lg text-xl leading-relaxed text-brand-100/80">
+            <p className="mt-5 max-w-lg text-xl leading-relaxed text-white/90">
               {business.shortDescription}
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -96,7 +96,7 @@ export default function Home() {
                 {business.phone}
               </a>
             </div>
-            <ul className="mt-9 flex flex-wrap gap-x-6 gap-y-2 text-base text-brand-100/80">
+            <ul className="mt-9 flex flex-wrap gap-x-6 gap-y-2 text-base text-white/90">
               <li className="flex items-center gap-2">
                 <CheckCircleIcon className="h-5 w-5 text-accent-400" />
                 {business.yearsInBusiness}+ years hands-on experience

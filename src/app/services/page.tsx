@@ -24,7 +24,7 @@ export default function ServicesPage() {
           <h1 className="mt-2 max-w-2xl text-4xl font-bold tracking-tight text-white sm:text-5xl">
             One contractor for nearly any project
           </h1>
-          <p className="mt-5 max-w-2xl text-lg text-brand-100/80">
+          <p className="mt-5 max-w-2xl text-lg text-white/90">
             From a single repair to a full-house rebuild, we scope, plan, and build the project to
             fit your space, timeline, and budget. Specialized electrical, plumbing, and other
             regulated work is coordinated with qualified professionals when required.
