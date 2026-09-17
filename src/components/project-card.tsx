@@ -2,19 +2,26 @@ import Image from "next/image";
 import { ClockIcon, serviceIconMap } from "@/components/icons";
 import type { SampleProject } from "@/data/projects";
 
-export function ProjectCard({ project }: { project: SampleProject }) {
+export function ProjectCard({
+  project,
+  sizes = "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw",
+}: {
+  project: SampleProject;
+  sizes?: string;
+}) {
   const Icon = serviceIconMap[project.icon];
   const heroImage = project.images[0];
 
   return (
-    <div className="overflow-hidden rounded-xl border border-brand-100 bg-white shadow-sm">
-      <div className="relative flex h-64 items-center justify-center bg-gradient-to-br from-brand-900 to-brand-700">
+    <div className="flex h-full flex-col overflow-hidden rounded-xl border border-brand-100 bg-white shadow-sm">
+      <div className="relative flex h-64 shrink-0 items-center justify-center bg-linear-to-br from-brand-900 to-brand-700">
         {heroImage ? (
           <Image
             src={heroImage.src}
             alt={heroImage.alt}
             fill
-            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+            quality={90}
+            sizes={sizes}
             className="object-cover"
           />
         ) : (
@@ -24,9 +31,11 @@ export function ProjectCard({ project }: { project: SampleProject }) {
           {project.category}
         </span>
       </div>
-      <div className="p-5">
+      <div className="flex flex-1 flex-col p-5">
         <h3 className="text-base font-semibold text-brand-950">{project.title}</h3>
-        <p className="mt-2 text-sm leading-relaxed text-brand-900/70">{project.scope}</p>
+        <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-brand-900/70">
+          {project.scope}
+        </p>
         <p className="mt-3 flex items-center gap-1.5 text-xs font-medium text-brand-900/60">
           <ClockIcon className="h-3.5 w-3.5" />
           {project.duration}

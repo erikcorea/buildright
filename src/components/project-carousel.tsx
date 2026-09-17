@@ -1,12 +1,49 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@/components/icons";
 import { ProjectCard } from "@/components/project-card";
 import type { SampleProject } from "@/data/projects";
 
+// Three back-to-back copies of the project list create an illusion of an
+// endless carousel: we start scrolled into the middle copy, and silently
+// (no animation) re-center back into it whenever the user scrolls far
+// enough into the leading or trailing copy to notice the seam.
+const COPIES = 3;
+
 export function ProjectCarousel({ projects }: { projects: SampleProject[] }) {
   const scrollerRef = useRef<HTMLDivElement>(null);
+  const trackWidthRef = useRef(0);
+
+  useEffect(() => {
+    const el = scrollerRef.current;
+    if (!el) return;
+
+    const recenter = () => {
+      trackWidthRef.current = el.scrollWidth / COPIES;
+      el.scrollLeft = trackWidthRef.current;
+    };
+    recenter();
+
+    const handleResize = () => recenter();
+    window.addEventListener("resize", handleResize);
+
+    const handleScroll = () => {
+      const trackWidth = trackWidthRef.current;
+      if (!trackWidth) return;
+      if (el.scrollLeft < trackWidth * 0.5) {
+        el.scrollLeft += trackWidth;
+      } else if (el.scrollLeft > trackWidth * 1.5) {
+        el.scrollLeft -= trackWidth;
+      }
+    };
+    el.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      el.removeEventListener("scroll", handleScroll);
+    };
+  }, [projects]);
 
   const scroll = (direction: "left" | "right") => {
     const el = scrollerRef.current;
@@ -15,20 +52,27 @@ export function ProjectCarousel({ projects }: { projects: SampleProject[] }) {
     el.scrollBy({ left: direction === "left" ? -amount : amount, behavior: "smooth" });
   };
 
+  const track = Array.from({ length: COPIES }, (_, copyIndex) =>
+    projects.map((project) => (
+      <div
+        key={`${copyIndex}-${project.slug}`}
+        className="w-[85%] shrink-0 snap-start sm:w-[55%] lg:w-[38%]"
+      >
+        <ProjectCard
+          project={project}
+          sizes="(min-width: 1024px) 38vw, (min-width: 640px) 55vw, 85vw"
+        />
+      </div>
+    ))
+  );
+
   return (
     <div className="relative">
       <div
         ref={scrollerRef}
         className="flex snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
       >
-        {projects.map((project) => (
-          <div
-            key={project.slug}
-            className="w-[85%] shrink-0 snap-start sm:w-[55%] lg:w-[38%]"
-          >
-            <ProjectCard project={project} />
-          </div>
-        ))}
+        {track}
       </div>
 
       <button

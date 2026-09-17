@@ -60,46 +60,46 @@ export default function Home() {
         <HeroCarousel images={heroCarouselImages} />
         <div
           aria-hidden
-          className="absolute inset-0 bg-gradient-to-l from-brand-950 via-brand-950/90 to-brand-950/35 sm:to-brand-950/25"
+          className="absolute inset-0 bg-linear-to-l from-brand-950 via-brand-950/90 to-brand-950/35 sm:to-brand-950/25"
         />
-        <Container className="relative py-24 sm:py-28 lg:py-32">
-          <div className="max-w-xl lg:ml-auto">
-            <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wide text-accent-400">
+        <Container className="relative flex min-h-[560px] items-center py-28 sm:min-h-[640px] sm:py-32 lg:min-h-[700px] lg:py-40">
+          <div className="max-w-2xl lg:ml-auto">
+            <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3.5 py-1.5 text-sm font-semibold uppercase tracking-wide text-accent-400">
               Chicago &amp; the surrounding suburbs
             </p>
-            <h1 className="mt-5 text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl">
+            <h1 className="mt-5 text-5xl font-bold leading-tight tracking-tight text-white sm:text-6xl">
               {business.tagline}
             </h1>
-            <p className="mt-5 max-w-lg text-lg leading-relaxed text-brand-100/80">
+            <p className="mt-5 max-w-lg text-xl leading-relaxed text-brand-100/80">
               {business.shortDescription}
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-1 rounded-md bg-accent-500 px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-accent-600"
+                className="inline-flex items-center justify-center gap-1 rounded-md bg-accent-500 px-7 py-4 text-base font-semibold text-white shadow-sm transition-colors hover:bg-accent-600"
               >
                 Get a Free Estimate
-                <ChevronRightIcon className="h-4 w-4" />
+                <ChevronRightIcon className="h-5 w-5" />
               </Link>
               <a
                 href={business.phoneHref}
-                className="inline-flex items-center justify-center gap-2 rounded-md border border-white/20 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+                className="inline-flex items-center justify-center gap-2 rounded-md border border-white/20 px-7 py-4 text-base font-semibold text-white transition-colors hover:bg-white/10"
               >
-                <PhoneIcon className="h-4 w-4" />
+                <PhoneIcon className="h-5 w-5" />
                 {business.phone}
               </a>
             </div>
-            <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-brand-100/80">
+            <ul className="mt-9 flex flex-wrap gap-x-6 gap-y-2 text-base text-brand-100/80">
               <li className="flex items-center gap-2">
-                <CheckCircleIcon className="h-4 w-4 text-accent-400" />
+                <CheckCircleIcon className="h-5 w-5 text-accent-400" />
                 {business.yearsInBusiness}+ years hands-on experience
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircleIcon className="h-4 w-4 text-accent-400" />
+                <CheckCircleIcon className="h-5 w-5 text-accent-400" />
                 Free estimates
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircleIcon className="h-4 w-4 text-accent-400" />
+                <CheckCircleIcon className="h-5 w-5 text-accent-400" />
                 Owner-led on every job
               </li>
             </ul>
