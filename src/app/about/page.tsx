@@ -47,7 +47,7 @@ export default function AboutPage() {
       <section className="py-20">
         <Container className="grid grid-cols-1 gap-12 lg:grid-cols-3">
           <div className="lg:col-span-2">
-            <SectionHeading eyebrow="Our story" title="Nine years of hands-on experience" />
+            <SectionHeading eyebrow="Our story" title="Nine years of practical experience" />
             <p className="mt-5 text-base leading-relaxed text-brand-900/85">
               {business.experienceStory}
             </p>
