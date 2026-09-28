@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://www.buildrightconstructionllc.com";
+const siteUrl = "https://www.buildrightchicago.com";
 const routes = ["", "/about", "/services", "/projects", "/gallery", "/reviews", "/contact"];
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -11,6 +11,11 @@ in (photos, reviews, licensing, service-area edge cases, etc.).
 - Phone: 708-822-8984
 - Email: brco.chi@gmail.com
 - Business address: (not provided)
+- Domain: `buildrightchicago.com` chosen 2026-09-27 (checked via DNS lookup only,
+  not yet purchased or confirmed via a registrar). The site's code
+  (`src/app/layout.tsx`, `sitemap.ts`, `robots.ts`) already uses this URL for
+  SEO/Open Graph/sitemap metadata, ahead of the actual purchase. If the owner
+  ends up buying a different domain, update those 3 files.
 - Years in business: 9 years
 - Business hours: (not provided)
 - Google Business Profile: (not provided)

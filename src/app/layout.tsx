@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://www.buildrightconstructionllc.com";
+const siteUrl = "https://www.buildrightchicago.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
