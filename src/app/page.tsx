@@ -103,6 +103,10 @@ export default function Home() {
               </li>
               <li className="flex items-center gap-2">
                 <CheckCircleIcon className="h-5 w-5 text-accent-400" />
+                Licensed &amp; insured
+              </li>
+              <li className="flex items-center gap-2">
+                <CheckCircleIcon className="h-5 w-5 text-accent-400" />
                 Free estimates
               </li>
               <li className="flex items-center gap-2">

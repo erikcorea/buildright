@@ -13,19 +13,19 @@ export const metadata: Metadata = {
 const values = [
   {
     title: "Attention to detail",
-    description: "The habits that matter in healthcare, precision and follow-through, carry directly into how we build.",
+    description: "The same precision and follow-through that mattered in the ER carries directly into how we build.",
+  },
+  {
+    title: "Responsibility",
+    description: "We hold ourselves accountable for every job we take on, from first call to final walkthrough.",
   },
   {
     title: "Clear communication",
     description: "You'll always know what's happening, what's next, and what it costs.",
   },
   {
-    title: "Problem-solving",
+    title: "Staying calm under pressure",
     description: "Older homes and tricky spaces come with surprises. We plan for them and work through them with you.",
-  },
-  {
-    title: "Genuine care",
-    description: "We treat every home, and every client, with the same respect we'd want in our own.",
   },
 ];
 
@@ -61,9 +61,14 @@ export default function AboutPage() {
             </h3>
             <p className="mt-2 text-2xl font-bold text-brand-950">{business.ownerName}</p>
             <p className="mt-4 text-sm leading-relaxed text-brand-900/85">
-              Founder of {business.name}, with {business.yearsInBusiness}+ years of hands-on
-              remodeling and construction experience, plus a 10-year career as an emergency room
-              nurse before that.
+              Founder of {business.name} and a licensed General Contractor, with{" "}
+              {business.yearsInBusiness}+ years of hands-on remodeling and construction
+              experience. Before that, nearly 10 years as a Registered Nurse in the Emergency
+              Room.
+            </p>
+            <p className="mt-3 flex items-center gap-2 text-sm font-semibold text-brand-950">
+              <CheckCircleIcon className="h-4 w-4 shrink-0 text-accent-600" />
+              Licensed &amp; insured
             </p>
             <div className="mt-6 space-y-2 border-t border-brand-100 pt-5 text-sm">
               <a href={business.phoneHref} className="block font-medium text-brand-900 hover:text-accent-600">
@@ -99,9 +104,9 @@ export default function AboutPage() {
           <div className="mx-auto max-w-2xl text-center">
             <CheckCircleIcon className="mx-auto h-10 w-10 text-accent-400" />
             <p className="mt-4 text-lg italic leading-relaxed text-white">
-              &ldquo;What makes us different is right in our name: BuildRight. We take pride in
-              doing things correctly, paying attention to the details, and never cutting
-              corners.&rdquo;
+              &ldquo;For me, BuildRight is about more than construction. It&apos;s about building
+              a company homeowners can trust with their homes, their investment, and their
+              vision.&rdquo;
             </p>
             <p className="mt-4 text-sm font-semibold text-white/90">
               {business.ownerName}, {business.ownerTitle}

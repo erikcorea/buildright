@@ -18,19 +18,22 @@ in (photos, reviews, licensing, service-area edge cases, etc.).
 
 ## 2. About the Business
 
-BuildRight Construction LLC is a locally owned general construction and
-remodeling company serving Chicago and the surrounding suburbs. Founded by
-Jose Mendoza after a 10-year career as an emergency room nurse, BuildRight
-was built on the same values that guided him in healthcare: attention to
-detail, clear communication, problem-solving, and genuine care for people.
-They specialize in interior renovations, bathrooms, kitchens, basements,
-flooring, decks, fences, and custom improvement projects. The goal is to
-combine quality craftsmanship with thoughtful design to create beautiful,
-functional spaces while treating every client and home with respect.
+BuildRight Construction LLC is a locally owned, licensed and insured general
+construction and remodeling company serving Chicago and the surrounding
+suburbs. Founded by Jose Mendoza after nearly 10 years working as a
+Registered Nurse in the Emergency Room, BuildRight was built on the same
+values that guided him in healthcare: attention to detail, responsibility,
+communication, and staying calm under pressure. They specialize in interior
+renovations, bathrooms, kitchens, basements, flooring, decks, fences, and
+custom improvement projects. The goal is to combine quality craftsmanship
+with thoughtful design to create beautiful, functional spaces while treating
+every client and home with respect.
 
 **Experience:** ~9 years of remodeling/construction experience, starting in
-2017 when Jose bought his first property and began renovating/repairing it
-hands-on, later expanding into professional client work.
+2017 when Jose bought his first property and became involved in remodeling
+and improving it. What started as a personal project became a passion. As
+his experience grew, he became a licensed General Contractor and founded
+BuildRight Construction.
 
 **Typical customers:** Homeowners, landlords, and real estate investors
 throughout Chicago and the surrounding suburbs, from small repairs to
@@ -124,13 +127,20 @@ highlighted reviews still needed)
 
 ## 7. License / Insurance / Credentials
 
-(not provided: license number, licensed/insured/bonded status,
-certifications, awards, professional memberships)
+Confirmed by owner (2026-09-27, his own "About the Owner" bio): Jose is a
+licensed General Contractor, and BuildRight Construction is licensed and
+insured. Reflected on the site (About page, homepage hero checklist).
+
+(not provided: license number, insurance carrier, bonding status,
+certifications, awards, professional memberships, so none of those specifics
+are stated on the site, only what the owner actually confirmed above)
 
 ## 8. Team
 
-(not provided: owner name/title/bio/photo, other team members, company
-photo)
+Owner bio and photo-less "About the Owner" text received 2026-09-27,
+incorporated into the About page (story, sidebar bio, closing quote) and
+`src/data/business.ts`. Still not provided: owner photo, other team members,
+company photo.
 
 ## 9. Estimates & Contact
 
