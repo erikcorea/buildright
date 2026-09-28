@@ -147,31 +147,6 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* Services */}
-      <section className="py-20">
-        <Container>
-          <SectionHeading
-            eyebrow="What we do"
-            title="Full-service remodeling & construction"
-            description="From a single repair to a full-house rebuild, we scope, plan, and build the project to fit your space, timeline, and budget."
-          />
-          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {featuredServices.map((service) => (
-              <ServiceCard key={service.slug} service={service} />
-            ))}
-          </div>
-          <div className="mt-10 text-center">
-            <Link
-              href="/services"
-              className="inline-flex items-center gap-1 text-sm font-semibold text-accent-600 hover:text-accent-700"
-            >
-              View all services
-              <ChevronRightIcon className="h-4 w-4" />
-            </Link>
-          </div>
-        </Container>
-      </section>
-
       {/* Why choose us */}
       <section className="bg-brand-50 py-20">
         <Container className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
@@ -238,6 +213,31 @@ export default function Home() {
               className="inline-flex items-center gap-1 text-sm font-semibold text-accent-600 hover:text-accent-700"
             >
               See more project types
+              <ChevronRightIcon className="h-4 w-4" />
+            </Link>
+          </div>
+        </Container>
+      </section>
+
+      {/* Services */}
+      <section className="py-20">
+        <Container>
+          <SectionHeading
+            eyebrow="What we do"
+            title="Full-service remodeling & construction"
+            description="From a single repair to a full-house rebuild, we scope, plan, and build the project to fit your space, timeline, and budget."
+          />
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {featuredServices.map((service) => (
+              <ServiceCard key={service.slug} service={service} />
+            ))}
+          </div>
+          <div className="mt-10 text-center">
+            <Link
+              href="/services"
+              className="inline-flex items-center gap-1 text-sm font-semibold text-accent-600 hover:text-accent-700"
+            >
+              View all services
               <ChevronRightIcon className="h-4 w-4" />
             </Link>
           </div>
