@@ -150,6 +150,14 @@ company photo.
 - Property visit before estimate: (not provided)
 - Info normally needed from customer before estimating: (not provided)
 - Anything else customers should know before contacting: (not provided)
+- Website form technical status (2026-09-27): Wired to a real email send via
+  Resend (`src/app/contact/actions.ts`, `src/components/contact-form.tsx`),
+  replacing the earlier `mailto:` link approach. **Requires a `RESEND_API_KEY`
+  to actually send** (see `.env.example`), someone needs to sign up at
+  resend.com, verify a sending domain, and set that key (and ideally
+  `CONTACT_FORM_TO_EMAIL`) in the hosting provider's environment variables
+  before this goes live. Without it, the form shows a friendly error asking
+  the visitor to call or text instead of silently failing.
 
 ## 10. Business Photos & Materials
 

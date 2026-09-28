@@ -1,6 +1,8 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { useActionState } from "react";
+import { useFormStatus } from "react-dom";
+import { submitContactForm, type ContactFormState } from "@/app/contact/actions";
 import { business } from "@/data/business";
 
 const projectTypes = [
@@ -14,43 +16,13 @@ const projectTypes = [
   "General repair / other",
 ];
 
-// No backend email service is wired up yet (see .env.example). This
-// opens the visitor's email client with the message pre-filled so the
-// form is functional today; swap this handler for a server action +
-// email provider (e.g. Resend) once the owner sets that up.
+const initialState: ContactFormState = { status: "idle" };
+
 export function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
-
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    const name = data.get("name");
-    const phone = data.get("phone");
-    const email = data.get("email");
-    const projectType = data.get("projectType");
-    const message = data.get("message");
-
-    const body = [
-      `Name: ${name}`,
-      `Phone: ${phone}`,
-      `Email: ${email}`,
-      `Project type: ${projectType}`,
-      "",
-      `${message}`,
-    ].join("\n");
-
-    const mailto = `${business.emailHref}?subject=${encodeURIComponent(
-      `New estimate request from ${name}`,
-    )}&body=${encodeURIComponent(body)}`;
-
-    const link = document.createElement("a");
-    link.href = mailto;
-    link.click();
-    setSubmitted(true);
-  }
+  const [state, formAction] = useActionState(submitContactForm, initialState);
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form action={formAction} className="space-y-5">
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <Field label="Full name" htmlFor="name">
           <input
@@ -109,20 +81,37 @@ export function ContactForm() {
         />
       </Field>
 
-      <button
-        type="submit"
-        className="w-full rounded-md bg-accent-500 px-6 py-3 text-sm font-semibold text-brand-950 shadow-sm transition-colors hover:bg-accent-hover sm:w-auto"
-      >
-        Request My Free Estimate
-      </button>
+      <SubmitButton />
 
-      {submitted && (
+      {state.status === "success" && (
         <p className="rounded-md bg-brand-50 px-4 py-3 text-sm text-brand-900">
-          Opening your email app to send this to {business.email}. If nothing
-          opened, email us directly or call {business.phone}.
+          {state.message}
+        </p>
+      )}
+      {state.status === "error" && (
+        <p className="rounded-md border border-accent-200 bg-accent-50 px-4 py-3 text-sm text-brand-900">
+          {state.message} You can also reach us at{" "}
+          <a href={business.phoneHref} className="font-semibold text-accent-600">
+            {business.phone}
+          </a>
+          .
         </p>
       )}
     </form>
+  );
+}
+
+function SubmitButton() {
+  const { pending } = useFormStatus();
+
+  return (
+    <button
+      type="submit"
+      disabled={pending}
+      className="w-full rounded-md bg-accent-500 px-6 py-3 text-sm font-semibold text-brand-950 shadow-sm transition-colors hover:bg-accent-hover disabled:cursor-not-allowed disabled:opacity-70 sm:w-auto"
+    >
+      {pending ? "Sending..." : "Request My Free Estimate"}
+    </button>
   );
 }
 
